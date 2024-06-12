@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Julius Foo | Designer</title>
+	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="reset.css">
+</head>
+
+<body class="flex-wrapper">
+	<header class="[ header ]">
+		<div class="wrapper max-w-1600">
+			<div class="border-b-1">
+				<a id="skip-nav" class="screenreader-text" href="#main-content">
+					Skip to Content
+				</a>
+				<div class="[ header-logo ][ flex-row justify-between align-center ]">
+					<div class=" flex-row logo-wrapper">
+						<a href="index.html">
+							<picture>
+								<source srcset="assets/images/logo-jf.svg" media="(max-width: 768px)" width="60">
+								<source srcset="assets/images/logo-jf.svg" media="(min-width: 767px)" width="75">
+								<img src="logo-jf.svg" alt="logo" loading=“lazy” decoding=“async”>
+							</picture>
+						</a>
+					</div>
+					<nav>
+						<ul role="list" class="[ header-nav__list ] [ flex-row ]">
+							<li><a href="index.html" class="[ header-nav__link ] ">Work</a></li>
+							<li><a href="about.html" class="[ header-nav__link ]">About</a></li>
+							<li><a href="contact.php" class="[ header-nav__link ] [ active ]">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+	</header>
+	<main id="main-content">
+		<div class="wrapper max-w-1600">
+			<div class="form__wrapper mt-2 wrapper">
+				<div class="form__text-wrapper">
+					<h1 class="contact__h1">— get in touch</h1>
+					<div class="form__p-wrapper flow">
+					</div>
+				</div>
+				<div class="form__flexbox">
+					<form class="form" action="send_email.php" method="post">
+						<div class="form-group">
+							<label for="first-name">First Name <span class="label-requirement">(required)</span></label>
+							<input class="form-input" type="text" id="first-name" name="first-name" required>
+						</div>
+						<div class="form-group">
+							<label for="last-name">Last Name</label>
+							<input class="form-input" type="text" id="last-name" name="last-name">
+						</div>
+						<div class="form-group">
+							<label for="email">Email Address <span class="label-requirement">(required)</span></label>
+							<input class="form-input" type="email" id="email" name="email" required>
+						</div>
+						<div class="form-group">
+							<label for="subject">Subject <span class="label-requirement">(required)</span></label>
+							<input class="form-input" type="text" id="subject" name="subject" required>
+						</div>
+						<div class="form-group">
+							<label for="message">Message <span class="label-requirement">(required)</span></label>
+							<textarea class="form-input" id="message" name="message" required></textarea>
+						</div>
+						<button class="form__button" type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer id="footer">
+		<div class="[ max-w-1600 wrapper ]">
+			<div class="[ primary-footer border-t-1 ]">
+				<div>
+					<p>© Julius Foo 2024 | Designer | <span><a
+								href="mailto:julius.tl.foo@gmail.com">julius.tl.foo@gmail.com</a></span>
+					</p>
+				</div>
+				<div role="list" class="[ social__list ] [ flex-row ]">
+					<a href="https://www.linkedin.com/in/juliusfoo/" class="[ social__link ]"> <svg
+							xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24px" height="24px">
+							<path class="social__icon"
+								d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z" />
+						</svg></a>
+					<a href="https://www.dribbble.com/jtlfoo" class="[ social__link ]"><svg xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 48 48" width="24px" height="24px">
+							<path class="social__icon"
+								d="M34.25 26c-1.402 0-2.774.123-4.113.348 1.834 4.728 3.224 9.672 4.127 14.785 4.767-2.867 8.252-7.648 9.356-13.286C40.728 26.66 37.565 26 34.25 26zM26.023 24.245c-.535-1.214-1.103-2.411-1.699-3.591C20.165 22.171 15.678 23 11 23c-2.362 0-4.671-.223-6.918-.627C4.039 22.911 4 23.451 4 24c0 5.405 2.164 10.308 5.661 13.911C13.057 31.433 18.932 26.451 26.023 24.245zM27.105 19.505c.659 1.315 1.289 2.647 1.876 4.003C30.688 23.178 32.448 23 34.25 23c3.416 0 6.687.624 9.712 1.758C43.971 24.504 44 24.256 44 24c0-4.98-1.842-9.531-4.864-13.035C35.724 14.524 31.648 17.436 27.105 19.505zM11.985 39.95C15.335 42.48 19.488 44 24 44c2.641 0 5.159-.527 7.469-1.461-.885-5.378-2.338-10.564-4.286-15.505C20.501 29.028 14.994 33.772 11.985 39.95zM37.015 8.845C33.513 5.834 28.97 4 24 4c-2.181 0-4.276.363-6.243 1.011 2.99 3.687 5.662 7.641 7.963 11.829C29.991 14.918 33.82 12.189 37.015 8.845zM4.552 19.41C6.646 19.791 8.798 20 11 20c4.173 0 8.179-.722 11.909-2.033-2.316-4.167-5.001-8.101-8.026-11.746C9.749 8.864 5.911 13.658 4.552 19.41z" />
+						</svg></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	</script>
+</body>
+
+</html>
